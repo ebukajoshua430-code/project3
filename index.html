@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design solutions made easy</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="container bar">
+  <div class="logo"></div>
+  <a href="#book" class="btn">Free Consultation</a>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <h1>Design solutions made easy</h1>
+    <p>With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.</p>
+  </section>
+
+  <section class="cards">
+    <div class="card graphic">Graphic Design</div>
+    <div class="card uiux">UI/UX</div>
+    <div class="card apps">Apps</div>
+    <div class="card photo">Photography</div>
+    <div class="card illus">Illustrations</div>
+    <div class="card motion">Motion Graphics</div>
+  </section>
+
+  <section class="about">
+    <img src="/images/profile-pic.png" alt="Amy smiling in a denim jacket">
+    <div>
+      <h2>I’m Amy, and I’d love to work on your next project</h2>
+      <p>I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations to complete mobile apps. I’m also handy with a camera!</p>
+      <a href="#book" class="btn coral">Free Consultation</a>
+    </div>
+  </section>
+</main>
+
+<section class="work">
+  <h2>My Work</h2>
+  <div class="track" id="track">
+    <img src="images/work1.jpg" alt="Blue geometric pattern">
+    <img src="images/work2.jpg" alt="Hand holding a newspaper design">
+    <img src="images/work3.jpg" alt="Graphic design notebook">
+  </div>
+  <div class="arrows">
+    <button id="prev" aria-label="Previous">&larr;</button>
+    <button id="next" aria-label="Next">&rarr;</button>
+  </div>
+</section>
+
+<section class="container cta" id="book">
+  <div>
+    <h2>Book a call with me</h2>
+    <p>I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a free consultation. Then we can move forward from there.</p>
+  </div>
+  <a href="#" class="btn coral">Free Consultation</a>
+</section>
+
+<footer class="container">
+  <div class="bar">
+    <div class="logo"></div>
+    <a href="#book" class="btn">Free Consultation</a>
+  </div>
+</footer>
+
+<div class="student-info">
+<p> Sylvester Joshua c.</p>
+<p>202441702168AF.</p>
+<p class="arvys">ARVYS TECNOLOGIES</p>
+<p>computer science</p>
+</div>
+
+<script>
+  const track = document.getElementById("track");
+  document.getElementById("next").onclick = () => track.appendChild(track.firstElementChild);
+  document.getElementById("prev").onclick = () => track.prepend(track.lastElementChild);
+</script>
+</body>
+</html>
